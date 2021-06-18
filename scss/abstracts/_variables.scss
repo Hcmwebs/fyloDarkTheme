@@ -1,0 +1,28 @@
+@use'./colors' as *;
+
+$shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+
+$borderRadius-1: 0.4rem;
+$borderRadius-2: 2rem;
+$letterSpacing: 1px;
+$transition: 0.3s ease-in-out all;
+$maxWidth: 1120px;
+$fixedWidth: 600px;
+
+$footerBackground : $darkBlue-300;
+$introEmailSignupBackground : $darkBlue-400;
+$mainBackground : $darkBlue-500;
+$testimonialsBackground : $darkBlue-600;
+
+$insideCTA-1: $cyan-500;
+$insideCTA-2: $blue-500;
+$errorColor: $lightRed-500;
+
+$textColor: $white-500;
