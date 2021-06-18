@@ -1,16 +1,9 @@
 @use '../abstracts' as *;
 
-
 /* images */
-.imgContainer {
-  width: 40vw;
-  max-width:$maxWidth;
-  border: 5px solid $textColor;
-  border-radius:$borderRadius-1;
 
-  .img{
-    width: 100%;
-    display: block;
-    object-fit: cover;
-  }
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }

@@ -1,4 +1,3 @@
-
 @use '../abstracts/' as *;
 
 /* Typography*/
@@ -13,22 +12,25 @@ html {
 
 body {
   @include grid(center);
-  background:$mainBackground;
+  background: $mainBackground;
   font-family: $bodyFont;
-  font-weight: 400;
+  font-weight: $regular;
   line-height: 1.75;
-  color:$textColor;
+  color: $textColor;
 }
 
 p {
   max-width: 64rem;
-
 }
 
-h1, h2, h3, h4, h5 {
-  margin:0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
   font-family: $headingFont;
-  font-weight: 700;
+  font-weight: $bold;
   line-height: 1.3;
   text-transform: capitalize;
 }
@@ -51,7 +53,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.750rem;
+  font-size: 1.75rem;
 }
 
 small,
@@ -59,10 +61,10 @@ small,
   font-size: $smallText;
 }
 
-a{
+a {
   text-decoration: none;
 }
-ul{
+ul {
   list-style-type: none;
   padding: 0;
 }
