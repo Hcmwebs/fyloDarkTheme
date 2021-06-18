@@ -3,5 +3,6 @@
 
 .header {
   width: 100%;
+  padding: 3rem 0;
   @include flex(column, center, center);
 }

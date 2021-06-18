@@ -35,6 +35,7 @@ body {
 }
 
 p {
+  font-size: 1rem;
   max-width: 64rem;
 }
 
@@ -88,12 +89,16 @@ ul {
 /* buttons */
 .btn {
   cursor: pointer;
+  width: 75%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
   color: white;
   background: linear-gradient(#65e2d9, #339ecc);
   border: transparent;
   border-radius: 2rem;
   letter-spacing: 1px;
-  padding: 0.375rem 0.75rem;
+  padding: 1.5rem 2.5rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   transition: 0.3s ease-in-out all;
   text-transform: capitalize;
@@ -238,12 +243,50 @@ ul {
   width: 100%;
 }
 
+.hero {
+  width: 320px;
+  display: grid;
+  place-items: center;
+  gap: 3.6rem;
+}
+.hero__header {
+  width: 304px;
+  height: 255px;
+  background: url(/images/illustration-intro.png) no-repeat center center/cover;
+}
+.hero__body {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+}
+.hero__body h1 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: center;
+  text-transform: initial;
+}
+.hero__body p {
+  line-height: 2.1rem;
+  text-align: center;
+  padding: 0 1.2rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: #3e52a3;
+}
+
+.header {
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 *,

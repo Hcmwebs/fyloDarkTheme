@@ -1,15 +1,19 @@
-@use'../abstracts'as *;
+@use '../abstracts'as *;
 /* buttons */
 .btn {
   cursor: pointer;
+  width: 75%;
+  font-family: $headingFont;
+  font-size: 1rem;
+  font-weight: bold;
   color: $textColor;
-  background: linear-gradient($insideCTA-1,$insideCTA-2);
+  background: linear-gradient($insideCTA-1, $insideCTA-2);
   border: transparent;
   border-radius: $borderRadius-2;
   letter-spacing: $letterSpacing;
-  padding: 0.375rem 0.75rem;
-  box-shadow:$shadow-1;
-  transition:$transition;
+  padding: 1.5rem 2.5rem;
+  box-shadow: $shadow-1;
+  transition: $transition;
   text-transform: capitalize;
   display: inline-block;
 
