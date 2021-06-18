@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+@use '../components/'as *;
+
+.header {
+  width: 100%;
+  @include flex(column, center, center);
+}
