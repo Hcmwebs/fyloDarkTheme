@@ -1,0 +1,41 @@
+@use '../abstracts' as *;
+
+.nav {
+  width: 100%;
+  padding: 2.4rem 0.325rem;
+  @include flex(row, space-between, center);
+
+  .logoContainer {
+    width: 8rem;
+    height: 2.4rem;
+  }
+
+  .navBar {
+    width: 16.7rem;
+    @include flex(row, space-between, center);
+
+    a {
+      font-family: $headingFont;
+      font-size: 1.2rem;
+      font-weight: $regular;
+      text-decoration: none;
+      color: $textColor;
+      position: relative;
+      transition: $transition;
+
+      &:before {
+        content: '';
+        width: 0;
+        height: 0.2rem;
+        position: absolute;
+        bottom: -0.3rem;
+        background-color: $textColor;
+        transition: $transition;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+}
