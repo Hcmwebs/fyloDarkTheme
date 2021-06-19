@@ -226,16 +226,18 @@ ul {
   font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
+  padding: 0.2rem;
   color: white;
   position: relative;
   transition: 0.3s ease-in-out all;
+  display: inline-block;
 }
 .nav .navBar a:before {
   content: "";
   width: 0;
   height: 0.2rem;
   position: absolute;
-  bottom: -0.3rem;
+  bottom: 0;
   background-color: white;
   transition: 0.3s ease-in-out all;
 }
@@ -248,6 +250,8 @@ ul {
   display: grid;
   place-items: center;
   gap: 3.6rem;
+  position: relative;
+  z-index: 9;
 }
 .hero__header {
   width: 304px;
@@ -270,6 +274,7 @@ ul {
   line-height: 2.1rem;
   text-align: center;
   padding: 0 1.2rem;
+  z-index: 9;
 }
 
 .attribution {
@@ -297,7 +302,18 @@ ul {
 
 .container {
   width: 90%;
+  min-height: 100vh;
   max-width: 1120px;
+  position: relative;
+}
+.container::after {
+  content: "";
+  width: 100%;
+  height: 292px;
+  position: absolute;
+  top: 320px;
+  left: 0;
+  background: url(/images/bg-curvy-mobile.svg) no-repeat center center/cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

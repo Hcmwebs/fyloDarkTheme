@@ -19,18 +19,21 @@
       font-size: 1.2rem;
       font-weight: $regular;
       text-decoration: none;
+      padding: 0.2rem;
       color: $textColor;
       position: relative;
       transition: $transition;
+      display: inline-block;
 
       &:before {
         content: '';
         width: 0;
         height: 0.2rem;
         position: absolute;
-        bottom: -0.3rem;
+        bottom: 0;
         background-color: $textColor;
         transition: $transition;
+
       }
 
       &:hover::before {
