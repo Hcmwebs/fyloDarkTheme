@@ -294,6 +294,11 @@ ul {
   align-items: center;
 }
 
+.main {
+  display: grid;
+  place-items: center;
+}
+
 *,
 ::after,
 ::before {
@@ -305,6 +310,8 @@ ul {
   min-height: 100vh;
   max-width: 1120px;
   position: relative;
+  display: grid;
+  place-items: center;
 }
 .container::after {
   content: "";
