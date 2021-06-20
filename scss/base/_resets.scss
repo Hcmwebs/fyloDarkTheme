@@ -13,6 +13,7 @@
   min-height: 100vh;
   max-width: $maxWidth;
   position: relative;
+  @include grid(center);
 
   &::after{
     content:'';
