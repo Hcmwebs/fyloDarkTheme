@@ -285,9 +285,54 @@ ul {
   color: #3e52a3;
 }
 
+.card {
+  width: 320px;
+  height: 199px;
+  display: grid;
+  place-items: center;
+  border: 1px solid purple;
+}
+
+.section {
+  min-height: 40vh;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+}
+.section__services {
+  width: 100%;
+  background-color: #fff;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+.section__about {
+  width: 100%;
+  background-color: salmon;
+}
+.section__about .card {
+  width: 320px;
+  height: 499px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__testimonials {
+  width: 100%;
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.4rem;
+  background-color: lightblue;
+}
+.section__testimonials .card {
+  width: 280px;
+  height: 160px;
+  padding: 1rem;
+}
+
 .header {
   width: 100%;
-  padding: 3rem 0;
+  padding: 6rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -295,8 +340,11 @@ ul {
 }
 
 .main {
+  width: 100%;
+  padding: 6rem 0;
   display: grid;
   place-items: center;
+  gap: 2rem;
 }
 
 *,
