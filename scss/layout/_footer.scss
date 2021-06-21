@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+.footer {
+  width: 100%;
+  padding: 3rem 0;
+  @include grid(center);
+  gap: 1rem;
+  background-color: $footerBackground;
+
+  .cards__wrapper{
+    width: 85%;
+    @include flex(column, space-between, start);
+    gap:2rem;
+
+    .card{
+      width: max-content;
+      height: auto;
+
+      &--column{
+        @include flex(column,center,center);
+      }
+
+      &--row{
+        @include flex(row, center, center)
+      }
+    }
+  }
+}
+
+@media (min-width:$largeScreens){
+  .footer{
+    height: 441px;
+
+    .cards__wrapper{
+      width: 1240px;
+      height: 220px;
+      flex-direction: row;
+    }
+  }
+}
