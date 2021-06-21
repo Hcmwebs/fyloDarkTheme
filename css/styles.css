@@ -363,7 +363,7 @@ ul {
   align-items: center;
   text-align: center;
 }
-.section--services .card__body h4 {
+.section--services .card__body h2 {
   font-size: 1.8rem;
   line-height: 20px;
 }
