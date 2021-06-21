@@ -63,7 +63,42 @@
         width: 100%;
         max-width: $fixedWidth;
         min-height:270px;
+        margin-top:2rem;
         border: 1px solid darkcyan;
+
+        h2{
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
+        p{
+          font-size: 1.4rem;
+          line-height: 2.1rem;
+        }
+        a{
+          font-size: 1.2rem;
+          @include flex(row,start,center);
+          color:$insideCTA-1;
+          position: relative;
+          transition: $transition;
+
+          &:hover{
+            color: $textColor;
+
+            a:before{
+              background-color: $textColor;
+            }
+          }
+
+          &:before{
+            content: '';
+            width: 122px;
+            height: 0.1rem;
+            background-color: $insideCTA-1;
+            position:absolute;
+            bottom: -0.1rem;
+          }
+
+        }
 
       }
 
@@ -133,6 +168,27 @@
         &__body{
           width: 560px;
           height: 285px;
+
+          h2{
+            font-size: 4rem;
+            line-height: 5rem;
+          }
+
+          p{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+          }
+
+          a{
+            font-size: 1.6rem;
+            align-items: center;
+
+            &:before{
+              width: 160px;
+            }
+
+          }
+
         }
       }
 

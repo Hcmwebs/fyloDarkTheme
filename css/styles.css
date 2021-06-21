@@ -393,7 +393,40 @@ ul {
   width: 100%;
   max-width: 600px;
   min-height: 270px;
+  margin-top: 2rem;
   border: 1px solid darkcyan;
+}
+.section--about .card__body h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+.section--about .card__body p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+.section--about .card__body a {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  color: #65e2d9;
+  position: relative;
+  transition: 0.3s ease-in-out all;
+}
+.section--about .card__body a:hover {
+  color: white;
+}
+.section--about .card__body a:hover a:before {
+  background-color: white;
+}
+.section--about .card__body a:before {
+  content: "";
+  width: 122px;
+  height: 0.1rem;
+  background-color: #65e2d9;
+  position: absolute;
+  bottom: -0.1rem;
 }
 .section--testimonials {
   width: 100%;
@@ -455,6 +488,21 @@ ul {
   .section--about .card__body {
     width: 560px;
     height: 285px;
+  }
+  .section--about .card__body h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .section--about .card__body p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .section--about .card__body a {
+    font-size: 1.6rem;
+    align-items: center;
+  }
+  .section--about .card__body a:before {
+    width: 160px;
   }
   .section--testimonials {
     max-width: 1180px;
