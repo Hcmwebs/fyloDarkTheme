@@ -11,18 +11,13 @@
   &__header {
     width: 304px;
     height: 255px;
-    background: url(/images/illustration-intro.png) no-repeat center
-      center/cover;
   }
+
   &__body {
     width: 100%;
     @include grid(center);
     gap: 3rem;
     z-index: 9;
-
-
-
-
 
     h1 {
       font-size: 2.4rem;
