@@ -6,7 +6,7 @@
   @include grid(center);
   gap: 3.6rem;
   position: relative;
-  z-index: 9;
+
 
   &__header {
     width: 304px;
@@ -18,6 +18,9 @@
     width: 100%;
     @include grid(center);
     gap: 3rem;
+    z-index: 9;
+
+
 
 
 
