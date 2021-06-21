@@ -10,9 +10,36 @@
 
   &--services{
     width:100%;
-    background-color: #fff;
     grid-template-columns:repeat(auto-fit,minmax(320px, 1fr));
     gap:2rem;
+
+    .card{
+      gap:2rem;
+      &__header {
+        @include grid(center);
+
+        .imgContainer{
+          width: 80px;
+          height: 80px;
+        }
+      }
+      &__body {
+        @include flex(column,space-between,center);
+        text-align: center;
+
+        h4{
+          font-size: 1.8rem;
+          line-height: 20px;
+        }
+        p{
+          font-size: 1.4rem;
+          line-height: 2.1rem;
+        }
+      }
+    }
+
+
+
 
   }
 

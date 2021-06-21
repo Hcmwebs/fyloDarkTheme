@@ -264,7 +264,6 @@ ul {
 .hero__header {
   width: 304px;
   height: 255px;
-  background: url(/images/illustration-intro.png) no-repeat center center/cover;
 }
 .hero__body {
   width: 100%;
@@ -343,9 +342,34 @@ ul {
 }
 .section--services {
   width: 100%;
-  background-color: #fff;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+}
+.section--services .card {
+  gap: 2rem;
+}
+.section--services .card__header {
+  display: grid;
+  place-items: center;
+}
+.section--services .card__header .imgContainer {
+  width: 80px;
+  height: 80px;
+}
+.section--services .card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.section--services .card__body h4 {
+  font-size: 1.8rem;
+  line-height: 20px;
+}
+.section--services .card__body p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
 }
 .section--about {
   width: 100%;
