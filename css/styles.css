@@ -291,7 +291,7 @@ ul {
 
 @media (min-width: 1440px) {
   .hero {
-    max-width: 734px;
+    width: 734px;
   }
   .hero__header {
     width: 720px;
