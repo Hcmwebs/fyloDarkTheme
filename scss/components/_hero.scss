@@ -1,3 +1,4 @@
+/* === hero section === */
 @use '../abstracts' as *;
 
 .hero {
@@ -35,6 +36,52 @@
       z-index: 9;
     }
 
+    .btn{
+      width: 240px;
+    }
+
 
   }
+}
+@media (min-width:$largeScreens){
+  .hero{
+      max-width:734px;
+
+    &__header {
+      width: 720px;
+      height: 534px;
+    }
+
+    &__body {
+      width: 100%;
+      padding: 0 0.7rem;
+      @include grid(center);
+      gap: 3rem;
+
+
+
+      h1 {
+        font-size: 4rem;
+        line-height:6rem;
+      }
+
+      p {
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align: center;
+        padding: 0 1.2rem;
+        z-index: 9;
+      }
+
+      .btn{
+        width: 280px;
+      }
+
+
+    }
+
+
+  }
+
+
 }
