@@ -1,32 +1,48 @@
+
+/* === sections === */
 @use '../abstracts' as *;
 @use './card' as *;
 .section{
-  min-height: 40vh;
-  padding: 2rem 0;
+  padding: 3rem 0;
   @include grid(center);
 
 
 
-  &__services{
+  &--services{
     width:100%;
     background-color: #fff;
-    grid-template-columns:repeat(auto-fit,minmax(400px, 1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px, 1fr));
     gap:2rem;
 
   }
 
-  &__about{
+  &--about{
     width:100%;
+    height: 499px;
     background-color: salmon;
 
     .card{
       width:320px;
-      height: 499px;
+      height: 500px;
       @include flex(column,space-between,center);
+
+      &__header{
+        width: 304px;
+        height: 230px;
+        border: 1px solid #fff;
+      }
+
+      &__body{
+        width: 100%;
+        max-width: $fixedWidth;
+        min-height:270px;
+        border: 1px solid darkcyan;
+
+      }
 
     }
   }
-  &__testimonials{
+  &--testimonials{
     width:100%;
     padding: 2rem;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
@@ -39,6 +55,41 @@
       height: 160px;
       padding: 1rem;
       //border: 1px solid darkblue
+    }
+  }
+}
+
+@media (min-width:$largeScreens){
+  .section{
+    &--services{
+      max-width: 880px;
+      height: 510px;
+
+    }
+    &--about{
+      max-width: 1280px;
+      height: 465px;
+
+      .card{
+        width: 85%;
+        height: 100%;
+        gap: 6rem;
+        flex-direction: row;
+
+        &__header{
+          width: 615px;
+          height: 100%;
+        }
+        &__body{
+          width: 560px;
+          height: 285px;
+        }
+      }
+
+    }
+    &--testimonials{
+        max-width: 1180px;
+
     }
   }
 }
