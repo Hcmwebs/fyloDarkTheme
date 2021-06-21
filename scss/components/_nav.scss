@@ -1,8 +1,8 @@
 @use '../abstracts' as *;
 
 .nav {
-  width: 100%;
-  padding: 2.4rem 0.325rem;
+  width: 90%;
+  padding: 2.4rem 0rem;
   @include flex(row, space-between, center);
 
   .logoContainer {
