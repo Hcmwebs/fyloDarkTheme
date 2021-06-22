@@ -374,7 +374,6 @@ ul {
 .section--about {
   width: 100%;
   height: 499px;
-  background-color: salmon;
 }
 .section--about .card {
   width: 320px;
@@ -387,14 +386,12 @@ ul {
 .section--about .card__header {
   width: 304px;
   height: 230px;
-  border: 1px solid #fff;
 }
 .section--about .card__body {
   width: 100%;
   max-width: 600px;
   min-height: 270px;
   margin-top: 2rem;
-  border: 1px solid darkcyan;
 }
 .section--about .card__body h2 {
   font-size: 1.8rem;
@@ -417,28 +414,78 @@ ul {
 .section--about .card__body a:hover {
   color: white;
 }
-.section--about .card__body a:hover a:before {
-  background-color: white;
-}
 .section--about .card__body a:before {
   content: "";
-  width: 122px;
-  height: 0.1rem;
+  width: 0;
+  height: 0.2rem;
   background-color: #65e2d9;
   position: absolute;
   bottom: -0.1rem;
+  transition: 0.3s ease-in-out all;
+}
+.section--about .card__body a:hover::before {
+  background-color: white;
+  width: 122px;
 }
 .section--testimonials {
   width: 100%;
   padding: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.4rem;
-  background-color: lightblue;
+  position: relative;
+}
+.section--testimonials:before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url(/images/bg-quotes.png) no-repeat;
+  position: absolute;
+  top: -2rem;
+  left: 5rem;
+  z-index: -1;
 }
 .section--testimonials .card {
   width: 280px;
   height: 160px;
   padding: 1rem;
+  background-color: #202a3c;
+  gap: 2rem;
+}
+.section--testimonials .card__header {
+  display: grid;
+  place-items: center;
+}
+.section--testimonials .card__body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+.section--testimonials .card__body .imgContainer {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.section--testimonials .card__body .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+}
+.section--testimonials .card__body .text strong {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+.section--testimonials .card__body .text small {
+  font: 0.7rem;
+  line-height: 1rem;
 }
 .section--CTA {
   width: 336px;
@@ -459,6 +506,9 @@ ul {
   display: grid;
   place-items: center;
   gap: 1rem;
+}
+.section--CTA .card__header p {
+  line-height: 1.8rem;
 }
 .section--CTA .card__body {
   width: 100%;
@@ -502,6 +552,9 @@ ul {
     align-items: center;
   }
   .section--about .card__body a:before {
+    width: 0px;
+  }
+  .section--about .card__body a:hover::before {
     width: 160px;
   }
   .section--testimonials {
@@ -530,7 +583,7 @@ ul {
   padding: 6rem 0;
   display: grid;
   place-items: center;
-  gap: 2rem;
+  gap: 16rem;
   position: relative;
 }
 
