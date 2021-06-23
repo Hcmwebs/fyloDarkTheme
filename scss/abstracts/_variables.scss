@@ -9,6 +9,7 @@ $shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
 
 $borderRadius-1: 0.4rem;
 $borderRadius-2: 2rem;
+$borderRadius-3: 0.9rem;
 $letterSpacing: 1px;
 $transition: 0.3s ease-in-out all;
 $maxWidth: 1440px;
@@ -18,9 +19,11 @@ $footerBackground: $darkBlue-300;
 $introEmailSignupBackground: $darkBlue-400;
 $mainBackground: $darkBlue-500;
 $testimonialsBackground: $darkBlue-600;
+$inputColor:$darkBlue-700;
 
 $insideCTA-1: $cyan-500;
 $insideCTA-2: $blue-500;
 $errorColor: $lightRed-500;
 
+$placeholderColor: $lightGrey-400;
 $textColor: $white-500;
