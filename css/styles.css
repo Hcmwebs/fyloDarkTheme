@@ -352,7 +352,6 @@ ul {
   height: 199px;
   display: grid;
   place-items: center;
-  border: 1px solid purple;
 }
 
 /* === sections === */
