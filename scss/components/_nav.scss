@@ -13,7 +13,7 @@
   .navBar {
     width: 16.7rem;
     @include flex(row, space-between, center);
-
+    
     a {
       font-family: $headingFont;
       font-size: 1.2rem;
@@ -24,6 +24,10 @@
       position: relative;
       transition: $transition;
       display: inline-block;
+
+      &:hover{
+        font-weight: $bold;
+      }
 
       &:before {
         content: '';
@@ -41,4 +45,16 @@
       }
     }
   }
+}
+@media (min-width:$largeScreens){
+  .nav{
+    .navBar {
+      width: 300px;
+      a{
+        font-size: 1.6rem;
+      }
+    }
+
+  }
+
 }

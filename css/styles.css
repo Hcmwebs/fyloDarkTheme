@@ -248,6 +248,9 @@ ul {
   transition: 0.3s ease-in-out all;
   display: inline-block;
 }
+.nav .navBar a:hover {
+  font-weight: 700;
+}
 .nav .navBar a:before {
   content: "";
   width: 0;
@@ -261,6 +264,14 @@ ul {
   width: 100%;
 }
 
+@media (min-width: 1440px) {
+  .nav .navBar {
+    width: 300px;
+  }
+  .nav .navBar a {
+    font-size: 1.6rem;
+  }
+}
 /* === hero section === */
 .hero {
   width: 320px;
