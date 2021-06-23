@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script src="https://kit.fontawesome.com/9109fe743e.js" crossorigin="anonymous"></script>
+
     <link
       rel="icon"
       type="image/png"
@@ -196,7 +198,7 @@
             <div class="card__body">
               <form action="contacts.html" method="post" class="form" id="form">
                 <div class="form-control">
-                  <input type="email" aria-label="email" placeholder="email@email.com"/>
+                  <input type="email" aria-label="email" placeholder="email@example.com"/>
                   <small class = 'form-alert' id='formAlert' >error message</small>
                 </div>
                 <button class="btn" type ="submit">Get Started For Free</button>
@@ -223,7 +225,8 @@
 
             </div>
           </div>
-          <div class="card card--column">
+
+          <div class="card card--column--two">
             <div class="card--column__body">
               <span >
                 <img src="/images/icon-phone.svg" alt="phone icon" class="img">
@@ -231,17 +234,39 @@
               <p>
                 +1-543-123-4567
               </p>
-              <div class="card--column__body">
-                <span >
-                  <img src="/images/icon-email.svg" alt="email icon" class="img">
-                </span>
-                <p>
-                  example@fylo.com
-                </p>
+            </div>
+
+            <div class="card--column__body">
+              <span >
+                <img src="/images/icon-email.svg" alt="email icon" class="img">
+              </span>
+              <p>
+                example@fylo.com
+              </p>
+            </div>
           </div>
-          <div class="card card--column"></div>
-          <div class="card card--row"></div>
+
+          <div class="card card--column--three">
+            <p>About Us</p>
+            <p>Jobs</p>
+            <p>Press</p>
+            <p>Blog</p>
+          </div>
+
+          <div class="card card--column--three">
+            <p>Contact Us</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+          </div>
+
+          <div class="card card--row">
+            <a href="#"> <i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="#"> <i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"> <i class="fab fa-instagram fa-2x"></i></a>
+          </div>
         </div>
+
+
         <div class="attribution">
           <small>
             Challenge by
@@ -254,13 +279,6 @@
       </footer>
 
     </div>
-
-
-
-
-     About Us Jobs Press Blog Contact Us Terms
-    Privacy
-
 
   </body>
 </html>
