@@ -15,39 +15,41 @@
 
     input{
       width: 100%;
-      font-size: 1.4rem;
+      font-size: 1.0rem;
+      line-height: 1.4rem;
       padding: 1.2rem 2.4rem;
       outline: none;
       border-radius: $borderRadius-2;
       border:none;
-      background-color: #fff;
+      color:$inputColor;
+      background-color:$textColor;
     }
 
     ::placeholder {
       font-family: inherit;
-      color: darken($textColor,10);
+      color: $placeholderColor;
     }
     .form-alert {
+      font-size: 1rem;
+      font-weight: $bold;
+      line-height: 1.4rem;
       color: $errorColor;
-      letter-spacing: $letterSpacing;
-      text-transform: capitalize;
-    }
-
-    small{
       padding: 0 2rem;
       text-align: left;
-      visibility: none;
+      visibility: hidden;
+      letter-spacing: $letterSpacing;
+      text-transform: capitalize;
 
-      .error{
+      &.error{
         visibility: visible
       }
+
     }
 
+
+
   }
 
-  .btn{
-    width: 100%;
-  }
 }
 @media (min-width:$largeScreens){
   .form{
@@ -56,9 +58,16 @@
     .form-control{
       width: 480px;
 
+      input{
+        font-size: 1.2rem;
+        line-height:1.6rem
+      }
+
+
+
     }
     .btn{
-      width: 200px;
+      padding: 1.2rem 3.0rem;
       align-self:start ;
     }
   }
