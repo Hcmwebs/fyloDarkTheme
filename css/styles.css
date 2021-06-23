@@ -654,6 +654,7 @@ ul {
 }
 .footer .cards__wrapper {
   width: 85%;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
