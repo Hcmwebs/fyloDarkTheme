@@ -360,6 +360,7 @@ ul {
   display: grid;
   place-items: center;
   /* === services section === */
+  /* === about section === */
   /* === testimonials section === */
   /* === CTA section === */
 }
@@ -436,6 +437,9 @@ ul {
 }
 .section--about .card__body a:hover {
   color: white;
+}
+.section--about .card__body a span {
+  margin-left: 0.5rem;
 }
 .section--about .card__body a:before {
   content: "";
