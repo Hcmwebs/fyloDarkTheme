@@ -9,6 +9,8 @@
 
 
 
+  /* === services section === */
+
   &--services{
     width:100%;
     grid-template-columns:repeat(auto-fit,minmax(320px, 1fr));
@@ -106,6 +108,7 @@
     }
   }
 
+  /* === testimonials section === */
 
   &--testimonials{
     width:100%;
@@ -131,16 +134,22 @@
       width: 280px;
       height: 160px;
       padding: 1rem;
+      border-radius: $borderRadius-1;
       background-color:$testimonialsBackground;
       gap: 2rem;
 
+
       &__header {
         @include grid(center);
+
+        p{
+          line-height:1.8rem
+        }
       }
       &__body{
         width: 100%;
-      @include flex(row,start,center);
-      gap: 2rem;
+        @include flex(row,start,center);
+        gap: 2rem;
 
         .imgContainer{
           width: 24px;
@@ -161,33 +170,48 @@
 
           }
           small{
-            font: 0.7rem;
+            font-size: 0.8rem;
             line-height: 1rem;
+            letter-spacing:0.05rem;
           }
         }
       }
     }
   }
+
+
+
+  /* === CTA section === */
   &--CTA{
     width: 336px;
     height: 353px;
     @include grid(center);
+    border-radius: $borderRadius-3;
+    background-color: $introEmailSignupBackground;
+
     .card{
       width: 280px;
       height: 276px;
-      padding: 2rem 0;
       @include grid(center);
-      gap: 1rem;
+      gap: 2rem;
 
       &__header {
         width: 100%;
         @include grid(center);
         gap: 1rem;
 
+        h3{
+          font-size:1.8rem;
+          line-height: 2.4rem;
+          text-transform: initial;
+        }
+
 
         p{
-          line-height: 1.8rem ;
-        };
+          font-size: 1.4rem;
+          line-height: 2.1rem ;
+          text-align: center;
+        }
 
       }
       &__body {
@@ -253,7 +277,33 @@
 
     }
     &--testimonials{
-        max-width: 1180px;
+        width: 1180px;
+        height: 260px;
+
+        &:before{
+          width: 80px;
+          height: 100px;
+          top:-1rem;
+          left:1.5rem
+
+
+        }
+
+        .card{
+          width: 360px;
+          height: 200px;
+
+
+          &__header{
+            p{
+              font-size: 1.4rem;
+              line-height: 2.1rem;
+              letter-spacing: 0.05rem;
+
+            }
+
+          }
+        }
 
     }
     &--CTA{
@@ -263,6 +313,14 @@
       .card{
         width: 709px;
         height: 211px;
+
+        &__header{
+
+          h3{
+            font-size: 3.2rem;
+            line-height: 4.8rem;
+          }
+        }
 
       }
     }
