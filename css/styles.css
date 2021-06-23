@@ -744,6 +744,11 @@ ul {
   border-radius: 50%;
   display: grid;
   place-items: center;
+  transition: 0.3s ease-in-out all;
+}
+.footer .cards__wrapper .card--row a:hover {
+  color: #65e2d9;
+  border-color: #65e2d9;
 }
 
 @media (min-width: 1440px) {

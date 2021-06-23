@@ -89,8 +89,13 @@
           color: $textColor;
           border-radius:50%;
           @include grid(center);
+          transition:$transition;
 
+          &:hover{
+            color:$insideCTA-1;
+            border-color: $insideCTA-1;
 
+          }
         }
 
       }
