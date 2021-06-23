@@ -3,7 +3,8 @@
 
 .main{
   width: 100%;
-  padding: 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 18rem;
   @include grid(center);
   gap:16rem;
   position: relative;
