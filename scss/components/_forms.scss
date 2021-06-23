@@ -60,14 +60,17 @@
 
       input{
         font-size: 1.2rem;
-        line-height:1.6rem
+        line-height:1.6rem;
+        padding:1.6rem 3.0rem;
+        border-radius: $borderRadius-4;
       }
 
 
 
     }
     .btn{
-      padding: 1.2rem 3.0rem;
+      padding: 1.6rem 2.3rem;
+      border-radius: $borderRadius-4;
       align-self:start ;
     }
   }
