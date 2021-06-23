@@ -189,9 +189,12 @@ ul {
   .form .form-control input {
     font-size: 1.2rem;
     line-height: 1.6rem;
+    padding: 1.6rem 3rem;
+    border-radius: 2.4rem;
   }
   .form .btn {
-    padding: 1.2rem 3rem;
+    padding: 1.6rem 2.3rem;
+    border-radius: 2.4rem;
     align-self: start;
   }
 }
