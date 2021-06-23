@@ -305,6 +305,8 @@ ul {
 }
 .hero__body .btn {
   width: 240px;
+  padding: 1.6rem 3rem;
+  border-radius: 2.4rem;
 }
 
 @media (min-width: 1440px) {
