@@ -697,7 +697,6 @@ ul {
 
 @media (min-width: 1440px) {
   .container::after {
-    height: 150vh;
     top: 0;
     height: auto;
     background: url(/images/bg-curvy-desktop.svg) no-repeat top center/cover;

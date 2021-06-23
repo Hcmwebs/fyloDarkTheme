@@ -29,6 +29,7 @@
 
 @media (min-width:$largeScreens){
   .container{
+
     &::after{
       top: 0;
       height: auto;
