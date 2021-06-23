@@ -519,6 +519,8 @@ ul {
 .section--CTA {
   width: 336px;
   height: 353px;
+  position: absolute;
+  bottom: -18rem;
   display: grid;
   place-items: center;
   border-radius: 0.9rem;
@@ -616,6 +618,7 @@ ul {
   .section--CTA {
     width: 863px;
     height: 275px;
+    bottom: -13.8rem;
   }
   .section--CTA .card {
     width: 709px;
@@ -637,7 +640,8 @@ ul {
 
 .main {
   width: 100%;
-  padding: 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 18rem;
   display: grid;
   place-items: center;
   gap: 16rem;

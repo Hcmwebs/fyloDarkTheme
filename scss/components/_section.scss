@@ -185,6 +185,8 @@
   &--CTA{
     width: 336px;
     height: 353px;
+    position: absolute;
+    bottom: -18rem;
     @include grid(center);
     border-radius: $borderRadius-3;
     background-color: $introEmailSignupBackground;
@@ -309,6 +311,7 @@
     &--CTA{
         width: 863px;
         height: 275px;
+        bottom:-13.8rem;
 
       .card{
         width: 709px;
