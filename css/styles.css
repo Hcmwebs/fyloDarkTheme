@@ -100,7 +100,7 @@ ul {
   letter-spacing: 1px;
   padding: 1.2rem 6rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  transition: 0.3s ease-in-out all;
+  transition: 0.8s ease-in-out all;
   text-transform: capitalize;
   display: inline-block;
   /*block class is good with forms*/

@@ -13,13 +13,14 @@
   letter-spacing: $letterSpacing;
   padding: 1.2rem 6.0rem;
   box-shadow: $shadow-1;
-  transition: $transition;
+  transition: $transition-2;
   text-transform: capitalize;
   display: inline-block;
 
   &:hover {
     background: $insideCTA-1;
     box-shadow: $shadow-3;
+
   }
   &-hipster {
     background: $insideCTA-2;
