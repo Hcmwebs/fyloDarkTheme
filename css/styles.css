@@ -144,14 +144,15 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-.form .form-control {
+.form .formGroup {
   width: 100%;
   max-width: 480px;
   padding-bottom: 1rem;
 }
-.form .form-control input {
+.form .formGroup input {
   width: 100%;
   font-size: 1rem;
+  font-weight: 700;
   line-height: 1.4rem;
   padding: 1.2rem 2.4rem;
   outline: none;
@@ -160,11 +161,12 @@ ul {
   color: #070439;
   background-color: white;
 }
-.form .form-control ::placeholder {
+.form .formGroup ::placeholder {
   font-family: inherit;
+  font-weight: 400;
   color: #bfbfbf;
 }
-.form .form-control .form-alert {
+.form .formGroup .form-alert {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.4rem;
@@ -173,9 +175,9 @@ ul {
   text-align: left;
   visibility: hidden;
   letter-spacing: 1px;
-  text-transform: capitalize;
+  text-transform: initial;
 }
-.form .form-control .form-alert.error {
+.form .formGroup.error .form-alert {
   visibility: visible;
 }
 

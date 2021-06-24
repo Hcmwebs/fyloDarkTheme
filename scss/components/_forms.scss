@@ -8,14 +8,16 @@
   @include flex(column, space-between, center);
 
 
-  .form-control{
+  .formGroup{
     width: 100%;
     max-width: 480px;
     padding-bottom:1rem;
 
+
     input{
       width: 100%;
       font-size: 1.0rem;
+      font-weight: $bold;
       line-height: 1.4rem;
       padding: 1.2rem 2.4rem;
       outline: none;
@@ -27,6 +29,7 @@
 
     ::placeholder {
       font-family: inherit;
+      font-weight: $regular;
       color: $placeholderColor;
     }
     .form-alert {
@@ -38,12 +41,11 @@
       text-align: left;
       visibility: hidden;
       letter-spacing: $letterSpacing;
-      text-transform: capitalize;
+      text-transform: initial;
+    }
 
-      &.error{
-        visibility: visible
-      }
-
+    &.error .form-alert{
+      visibility: visible
     }
 
 
