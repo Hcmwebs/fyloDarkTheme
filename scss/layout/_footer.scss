@@ -10,6 +10,7 @@
 
   .cards__wrapper{
     width: 85%;
+    max-width: fixedWidth;
     margin-top:20rem;
     @include flex(column, space-between, start);
     gap:2rem;

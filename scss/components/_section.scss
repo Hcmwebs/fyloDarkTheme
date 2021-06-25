@@ -195,8 +195,8 @@
     bottom: -18rem;
     @include grid(center);
     border-radius: $borderRadius-3;
-    background-color: $mainBackground;
-
+    background-color: $introEmailSignupBackground;
+    
     .card{
       width: 280px;
       height: 276px;

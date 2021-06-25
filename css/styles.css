@@ -15,7 +15,7 @@
   margin: 0 auto;
   border: 5px solid #339ecc;
   border-radius: 50%;
-  border-top-color: #1c2431;
+  border-top-color: #181f2a;
   animation: spinner 0.6s linear infinite;
 }
 
@@ -27,7 +27,7 @@ html {
 body {
   display: grid;
   place-items: center;
-  background: #1c2431;
+  background: #181f2a;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.75;
@@ -289,13 +289,10 @@ ul {
 }
 .hero__body {
   width: 100%;
-  margin-top: 7rem;
-  margin-bottom: -10rem;
   padding: 0 2.75rem;
   display: grid;
   place-items: center;
   gap: 3rem;
-  background-color: #181f2a;
 }
 .hero__body h1 {
   font-size: 2.4rem;
@@ -329,7 +326,6 @@ ul {
     display: grid;
     place-items: center;
     gap: 3rem;
-    background-color: transparent;
   }
   .hero__body h1 {
     font-size: 4rem;
@@ -650,12 +646,12 @@ ul {
 
 .main {
   width: 100%;
-  padding: 18rem 0;
+  padding-top: 10rem;
+  padding-bottom: 18rem;
   display: grid;
   place-items: center;
   gap: 16rem;
   position: relative;
-  background-color: #181f2a;
 }
 
 .footer {
@@ -668,6 +664,7 @@ ul {
 }
 .footer .cards__wrapper {
   width: 85%;
+  max-width: fixedWidth;
   margin-top: 20rem;
   display: flex;
   flex-direction: column;
@@ -799,6 +796,7 @@ ul {
   top: 380px;
   left: 0;
   background: url(/images/bg-curvy-mobile.svg) no-repeat top center/cover;
+  background-color: #1c2431;
   z-index: -1;
 }
 

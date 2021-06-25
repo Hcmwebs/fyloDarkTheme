@@ -9,6 +9,7 @@
   z-index: 9;
 
 
+
   &__header {
     width: 304px;
     height: 255px;
@@ -16,12 +17,10 @@
 
   &__body {
     width: 100%;
-    margin-top: 7rem;
-    margin-bottom: -10rem;
     padding: 0 2.75rem ;
     @include grid(center);
     gap: 3rem;
-    background-color: $introEmailSignupBackground;
+
 
 
 
@@ -64,7 +63,7 @@
       padding: 0 0.7rem;
       @include grid(center);
       gap: 3rem;
-      background-color: transparent;
+    
 
 
 
