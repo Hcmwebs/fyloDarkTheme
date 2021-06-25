@@ -15,14 +15,17 @@
   position: relative;
   @include grid(center);
 
+
+
   &::after{
     content:'';
     width: 100%;
-    height: 292px;
+    height: 150px;
     position:absolute;
-    top:400px;
+    top:380px;
     left: 0;
-    background:url(/images/bg-curvy-mobile.svg) no-repeat top center/contain;
+    background:url(/images/bg-curvy-mobile.svg) no-repeat top center/cover;
+    z-index: -1;
   }
 
 }
@@ -31,9 +34,11 @@
   .container{
 
     &::after{
-      top: 0;
-      height: auto;
+
+      top:720px;
+      height: 450px;
       background:url(/images/bg-curvy-desktop.svg) no-repeat top center/cover;
+
 
     }
   }

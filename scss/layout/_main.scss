@@ -3,10 +3,11 @@
 
 .main{
   width: 100%;
-  padding-top: 6rem;
-  padding-bottom: 18rem;
+  padding: 18rem 0;
   @include grid(center);
   gap:16rem;
   position: relative;
+  background-color: $introEmailSignupBackground;
+
 
 }
