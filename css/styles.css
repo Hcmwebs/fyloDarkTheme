@@ -829,7 +829,7 @@ ul {
 
 @media (min-width: 768px) {
   .container::after {
-    top: 310px;
+    top: 320px;
     height: 400px;
   }
 }
