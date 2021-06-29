@@ -23,6 +23,7 @@
 
       &--column{
         width: 100%;
+        max-width: 380px;
         @include flex(column,center,start);
         gap: 1.6rem;
 
@@ -56,6 +57,7 @@
         }
         &--two{
           width: 100%;
+          max-width: 380px;
           margin-bottom:3.6rem;
           @include flex(column, space-between,center);
           gap: 2rem;
@@ -108,19 +110,19 @@
 
 @media (min-width:$tablets){
   .footer{
-    margin-top: -5rem;
+
 
     .cards__wrapper{
       flex-direction: row;
 
       .card{
         &--column {
-          width: 380px;
+          // width: 380px;
 
           &__body{
 
             p{
-              width: 339px;
+              max-width: 339px;
 
             }
 
@@ -142,18 +144,13 @@
 
       .card{
         &--column {
-          width: 380px;
-
-          &__body{
-
-            p{
-              width: 339px;
-
-            }
-
-          }
+          gap: 3rem;
         }
       }
+    }
+
+    .mt{
+      margin-top: 6.5rem;
     }
   }
 }

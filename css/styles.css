@@ -695,6 +695,7 @@ ul {
 }
 .footer .cards__wrapper .card--column {
   width: 100%;
+  max-width: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -727,6 +728,7 @@ ul {
 }
 .footer .cards__wrapper .card--column--two {
   width: 100%;
+  max-width: 380px;
   margin-bottom: 3.6rem;
   display: flex;
   flex-direction: column;
@@ -776,17 +778,11 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .footer {
-    margin-top: -5rem;
-  }
   .footer .cards__wrapper {
     flex-direction: row;
   }
-  .footer .cards__wrapper .card--column {
-    width: 380px;
-  }
   .footer .cards__wrapper .card--column__body p {
-    width: 339px;
+    max-width: 339px;
   }
 }
 @media (min-width: 1440px) {
@@ -796,10 +792,10 @@ ul {
     flex-wrap: nowrap;
   }
   .footer .cards__wrapper .card--column {
-    width: 380px;
+    gap: 3rem;
   }
-  .footer .cards__wrapper .card--column__body p {
-    width: 339px;
+  .footer .mt {
+    margin-top: 6.5rem;
   }
 }
 *,
@@ -819,7 +815,7 @@ ul {
 .container::after {
   content: "";
   width: 100%;
-  height: 250px;
+  height: 230px;
   position: absolute;
   top: 350px;
   left: 0;
