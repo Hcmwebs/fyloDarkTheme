@@ -829,13 +829,13 @@ ul {
 
 @media (min-width: 768px) {
   .container::after {
-    top: 320px;
+    top: 380px;
     height: 400px;
   }
 }
 @media (min-width: 1440px) {
   .container::after {
-    top: 560px;
+    top: 580px;
     height: 500px;
     background: url(/images/bg-curvy-desktop.svg) no-repeat top center/cover;
   }
