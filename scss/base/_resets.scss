@@ -25,17 +25,26 @@
     top:380px;
     left: 0;
     background:url(/images/bg-curvy-mobile.svg) no-repeat top center/cover;
-    background-color: $introEmailSignupBackground;
     z-index: -1;
+
   }
 
+}
+
+@media (min-width:$tablets){
+  .container{
+
+    &::after{
+      top:400px;
+      height: 300px;
+    }
+  }
 }
 
 @media (min-width:$largeScreens){
   .container{
 
     &::after{
-
       top:720px;
       height: 450px;
       background:url(/images/bg-curvy-desktop.svg) no-repeat top center/cover;

@@ -3,6 +3,7 @@
 
 .footer {
   width: 100%;
+  min-height: 500px;
   padding: 3rem 0;
   @include grid(center);
   gap: 5.6rem;
@@ -13,6 +14,7 @@
     max-width: fixedWidth;
     margin-top:20rem;
     @include flex(column, space-between, start);
+    flex-wrap: wrap;
     gap:2rem;
 
     .card{
@@ -104,13 +106,11 @@
   }
 }
 
-@media (min-width:$largeScreens){
+@media (min-width:$tablets){
   .footer{
-    height: 441px;
+    margin-top: -5rem;
 
     .cards__wrapper{
-      width: 1240px;
-      height: 220px;
       flex-direction: row;
 
       .card{
@@ -127,8 +127,33 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width:$largeScreens){
+  .footer{
 
 
+    .cards__wrapper{
+      width: 1240px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      .card{
+        &--column {
+          width: 380px;
+
+          &__body{
+
+            p{
+              width: 339px;
+
+            }
+
+          }
+        }
+      }
     }
   }
 }
