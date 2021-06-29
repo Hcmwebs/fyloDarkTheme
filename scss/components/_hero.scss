@@ -17,9 +17,12 @@
 
   &__body {
     width: 100%;
+    margin-top: 4rem;
     padding: 0 2.75rem ;
     @include grid(center);
     gap: 3rem;
+    background-color: $mainBackground;
+
 
 
 
@@ -28,6 +31,7 @@
       line-height: 3.6rem;
       text-align: center;
       text-transform: initial;
+      background-color: transparent;
 
     }
 
@@ -48,6 +52,18 @@
 
   }
 }
+
+@media (min-width:$tablets){
+    .hero{
+      width:$fixedWidth;
+
+      &__body{
+        margin-top: 0;
+        background-color: transparent;
+      }
+    }
+
+}
 @media (min-width:$largeScreens){
   .hero{
       width:734px;
@@ -62,6 +78,7 @@
       padding: 0 0.7rem;
       @include grid(center);
       gap: 3rem;
+
 
 
 

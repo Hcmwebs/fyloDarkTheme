@@ -8,32 +8,31 @@
   @include grid(center);
   gap:16rem;
   position: relative;
-  background-color: $mainBackground;
 
-  &::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -310px;
-    background-color:$mainBackground;
-    z-index: -1;
-  }
+
+  // &::before{
+  //   content: '';
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: -310px;
+  //   z-index: -1;
+  // }
 
 }
 
 
-@media (min-width:$tablets){
-  .main{
-    &::before{
-      top: -150px;
-    }
-  }
-}
-@media (min-width:$largeScreens){
-  .main{
-    &::before{
-      top: 0px;
-    }
-  }
-}
+// @media (min-width:$tablets){
+//   .main{
+//     &::before{
+//       top: -150px;
+//     }
+//   }
+// }
+// @media (min-width:$largeScreens){
+//   .main{
+//     &::before{
+//       top: 0px;
+//     }
+//   }
+// }
