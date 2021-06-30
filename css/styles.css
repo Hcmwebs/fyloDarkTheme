@@ -820,9 +820,9 @@ ul {
 .container::after {
   content: "";
   width: 100%;
-  height: 230px;
+  height: 180px;
   position: absolute;
-  top: 350px;
+  top: 280px;
   left: 0;
   background: url(/images/bg-curvy-mobile.svg) no-repeat top center/cover;
   background-color: #1c2431;
