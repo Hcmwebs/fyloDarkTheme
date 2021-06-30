@@ -680,14 +680,13 @@ ul {
 }
 .footer .cards__wrapper {
   width: 85%;
-  max-width: fixedWidth;
   margin-top: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
 }
 .footer .cards__wrapper .card {
   width: 100%;
@@ -700,7 +699,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 1.6rem;
+  gap: 3rem;
 }
 .footer .cards__wrapper .card--column__header {
   width: 120px;
@@ -734,7 +733,7 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .footer .cards__wrapper .card--column--two__body {
   display: flex;
@@ -743,7 +742,8 @@ ul {
   align-items: center;
 }
 .footer .cards__wrapper .card--column--three {
-  width: 100%;
+  width: 80%;
+  max-width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -756,6 +756,8 @@ ul {
 }
 .footer .cards__wrapper .card--row {
   width: 100%;
+  max-width: 150px;
+  align-self: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -784,20 +786,23 @@ ul {
   .footer .cards__wrapper .card--column__body p {
     max-width: 339px;
   }
+  .footer .cards__wrapper .card--column--two {
+    margin-bottom: 0;
+  }
+  .footer .cards__wrapper .card--row {
+    align-self: start;
+  }
 }
 @media (min-width: 1440px) {
   .footer .cards__wrapper {
-    width: 1240px;
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  .footer .cards__wrapper .card--column {
-    gap: 3rem;
-  }
-  .footer .mt {
-    margin-top: 6.5rem;
-  }
 }
+.mt {
+  margin-top: 6.5rem;
+}
+
 *,
 ::after,
 ::before {

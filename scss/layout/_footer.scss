@@ -11,11 +11,10 @@
 
   .cards__wrapper{
     width: 85%;
-    max-width: fixedWidth;
     margin-top:20rem;
     @include flex(column, space-between, start);
     flex-wrap: wrap;
-    gap:2rem;
+    gap:4rem;
 
     .card{
       width: 100%;
@@ -25,7 +24,7 @@
         width: 100%;
         max-width: 380px;
         @include flex(column,center,start);
-        gap: 1.6rem;
+        gap: 3rem;
 
         &__header{
           width: 120px;
@@ -60,7 +59,7 @@
           max-width: 380px;
           margin-bottom:3.6rem;
           @include flex(column, space-between,center);
-          gap: 2rem;
+          gap: 2.5rem;
 
           &__body{
             @include flex(row,space-between,center);
@@ -68,7 +67,8 @@
           }
         }
         &--three{
-          width: 100%;
+          width: 80%;
+          max-width: 150px;
           @include flex(column, space-between,start);
           gap:1rem;
           p{
@@ -84,6 +84,8 @@
 
       &--row{
         width: 100%;
+        max-width:150px;
+        align-self: center;
         @include flex(row, center, center);
         gap: 1rem;
 
@@ -117,9 +119,7 @@
 
       .card{
         &--column {
-          // width: 380px;
-
-          &__body{
+            &__body{
 
             p{
               max-width: 339px;
@@ -127,6 +127,14 @@
             }
 
           }
+
+          &--two{
+            margin-bottom: 0;
+          }
+
+        }
+        &--row{
+          align-self: start;
         }
       }
     }
@@ -138,19 +146,16 @@
 
 
     .cards__wrapper{
-      width: 1240px;
       flex-direction: row;
       flex-wrap: nowrap;
 
-      .card{
-        &--column {
-          gap: 3rem;
-        }
-      }
+
     }
 
-    .mt{
-      margin-top: 6.5rem;
-    }
+
   }
+}
+
+.mt{
+  margin-top: 6.5rem;
 }
