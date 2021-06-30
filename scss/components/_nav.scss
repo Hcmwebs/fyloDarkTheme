@@ -13,7 +13,7 @@
   .navBar {
     width: 16.7rem;
     @include flex(row, space-between, center);
-    
+
     a {
       font-family: $headingFont;
       font-size: 1.2rem;
@@ -48,6 +48,11 @@
 }
 @media (min-width:$largeScreens){
   .nav{
+    .logoContainer{
+      width: 17.6rem;
+      height: 5.2rem;
+
+    }
     .navBar {
       width: 300px;
       a{
