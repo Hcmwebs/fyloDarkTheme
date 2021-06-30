@@ -33,7 +33,7 @@ This is a screenshot for a laptop size screen, 1440 * 900. I had issues setting 
 
 ### Links
 
-- Solution URL: [Here's a link to my solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-calculator-app-built-with-css-grid-flexbox-and-js-yRNue2qwz).
+- Solution URL: [Here's a link to my solution on Frontend Mentor](https://www.frontendmentor.io/solutions/used-sass-flex-and-grid-layouts-luxRQ_jOJ).
 - Live Site URL: [And here's this bad boy in action](https://github.com/Hcmwebs/fyloDarkTheme)
 
 ### Built with
