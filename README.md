@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Final Screenshots](images/FyloDarkScreenShots/desktop.png)
+![Final Screenshots](images/FyloDarkScreenShots/Desktop.png)
 
 This is a screenshot for a laptop size screen, 1440 * 900. I had issues setting up the background curvy image on different screens but I eventually came up with this.
 
