@@ -8,8 +8,8 @@ This is my solution to the [Fylo Dark Theme Landing Page challenge on Frontend M
   - [The challenge](####https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd/hub/fylo-dark-theme-landing-page-8-EydhQYY)
   - ![Screenshot](images/FyloDarkScreenShots/mobile.png)
   - [Built with](#Built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+  - [What challenged me](#What-challenged-me)
+  - [What I learned](#What-I-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -29,14 +29,12 @@ Users should be able to:
 
 ![Final Screenshots](images/FyloDarkScreenShots/desktop.png)
 
-Here are the final screenshots of this project, which honestly took a bit longer than I thought it would due to my unfamiliarity with certain aspects of the coding side of this. To be honest, I'd never created a calculator app before, or implemented one with a theme slider that could save the last selected theme to the browser, but I guess it helps to know how to do it now. :)
+This is a screenshot for a laptop size screen, 1440 * 900. I had issues setting different screens but I eventually came up with this.
 
 ### Links
 
 - Solution URL: [Here's a link to my solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-calculator-app-built-with-css-grid-flexbox-and-js-yRNue2qwz).
-- Live Site URL: [And here's this bad boy in action](https://valkinsenn.github.io/frontend-mentor--calculator-app-main/).
-
-## My process
+- Live Site URL: [And here's this bad boy in action](https://valkinsenn.github.io/frontend-mentor--calculator-app-main/)
 
 ### Built with
 
@@ -47,21 +45,19 @@ Here are the final screenshots of this project, which honestly took a bit longer
 - Mobile-first design
 - [Sass](https://sass-lang.com/dart-sass)
 
+### What challenged me!
+I realized, I have a lot to learn about pseudo elements and the **background images **
 ### What I learned
 
-Well, first and foremost, I learned how to create a working calculator app. It's nothing as glamorous as a graphic calculator, but it still works as its supposed to, and that's what matters. I also learned about ways to create a working theme switcher too, along with saving the last selected theme on a user's browser so it automatically loads the next time the page is loaded.
-
-### Continued development
-
-Just for kicks, I'd like to add some 3D stuff to this project, and maybe add in some glassmorphism styling, too.
+I got deeper into the background images, the sizing as well as the positioning. I still have a long way to go but am really happy with the progress.
 
 ### Useful resources
 
-- [Google](https://www.google.com) - Probably **the** most valuable tool in a web developers arsenal, frontend or backend. Any search engine would do, though.
-- [Kevin Powell | Dark mode theme switch example](https://codepen.io/kevinpowell/pen/EMdjOV?editors=0010) - This Codepen and the corresponding video [here](https://www.youtube.com/watch?v=wodWDIdV9BY) was instrumental in helping me to understand how to create themes to switch back and forth between at will. It also helped me better understand storing stuff, like theme data, in the browser's cache.
-- [Stack Overflow | Watching a form for changes](https://stackoverflow.com/questions/10760847/entire-form-onchange) - This gave me a quick refresher on getting JavaScript to watch a form for changes.
-- [Stack Overflow | Getting JavaScript to swap between different radio buttons](https://stackoverflow.com/a/16108679) - This helped with getting JavaScript to change which radio buttons a checked in a form.
-- [Web Dev Simplified | Building a Calculator with JavaScript](https://www.youtube.com/watch?v=j59qQ7YWLxw) - I could not have gotten the calculator to function properly without this invaluable tutorial. It also helped reinforce my budding knowledge of JavaScript classes (still got a ways to go, though).
+- [Google](https://www.google.com) -Definately **THE** most valuable tool in a web developers **TOOLBOX**, frontend or backend. Any search engine would do, though.
+- [Florin Poppin | Form Validation](https://codepen.io/FlorinPop17/pen/OJ...) -This codepen corresponding this video [here](https://www.youtube.com/watch?v=rsd4FNGTRBw) came in handy for the form validation with JavaScript.
+- [Stack Overflow | email Regex](https://stackoverflow.com/questions/201323/how-to-validate-an-email-address-using-a-regular-expression) - This is always vital for a reminder of regular expressions
+- [Stack Overflow | email Regex](http://emailregex.com/) - I also used the JavaScript regex on this page for tests.
+
 
 ## Author
 
